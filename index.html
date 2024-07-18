@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+    <!-- By rafi ikbar -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator BMI</title>
+    <link rel="stylesheet" href="./css/style.css"
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator BMI</h1>
+        <p></p>
+        <form onsubmit="display(event)">
+            <input class="box" id="Nama" placeholder="Nama Kamu"required>
+            <input class="box" type="number" id="age" placeholder="Usia" required>
+            <select id="gender" required>
+                <option value="">Pilih jenis kelamin</option>
+                <option value="male">Laki-laki</option>
+                <option value="female">Perempuan</option>
+            </select>
+            <input class="box" id="height" placeholder="Tinggi badan (cm)" required>
+            <input class="box" id="weight" placeholder="Berat badan (kg)" required>
+            <button type="submit">Hitung BMI</button>
+        </form>
+        <div class="result">
+            <h1>BMI Kamu adalah</h1>
+            <h2 id="bmiResult">...</h2>
+            <h3 id="kategori">...</h3>
+        </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
